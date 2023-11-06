@@ -2,11 +2,9 @@ import { React, useState } from 'react';
 
 const Folder = (props) => {
   const [currentTab, setCurrentTab] = useState(0);
-
   const selectTab = (num) => {
     setCurrentTab(num);
   }
-
   const folder = props.folders[currentTab];
   const titles = props.folders.map((folder) => folder.title);
 
@@ -14,10 +12,8 @@ const Folder = (props) => {
     const idx = parseInt(e.target.id, 10);
     selectTab(idx);
   }
-
   const tabs = titles.map((title, idx) => {
     const headerClass = (idx === currentTab) ? 'active' : '';
-
     return (
       <li
         key={idx}
