@@ -21,29 +21,6 @@ const folders = [
   { title: 'three', content: 'Third folder here' }
 ];
 
-// class App extends React.Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       showClock: true
-//     };
-//   }
-  
-//   toggleClock = () => this.setState({ showClock: !this.state.showClock });
-  
-//   render () {
-//     return (
-//       <div className="widgets">
-//         <Folder folders={folders} />
-//         <Weather />
-//         <ClockToggle toggleClock={this.toggleClock} />
-//         {this.state.showClock && <Clock />}
-//         <Autocomplete names={names} />
-//       </div>
-//     );
-//   }
-// }
-
 function App() {
   const [showClock, setShowClock] = useState(true)
 
